@@ -8,11 +8,11 @@ int sc_w = dbScreenWidth()-50;
 int sc_h = dbScreenHeight()-70;
 #define TEXTSIZE 35
 
-void resetJimmies()
+void resetJimmies() //set the jimmies back to 100%
 {
 	jimmies = 100;
 }
-void hndJimmies()
+void hndJimmies() //Display the win text when the user fully unrustles their jimmies
 {
 	if(jimmies <=0)
 	{
@@ -38,7 +38,7 @@ public:
 	speed = .4;
 	time = 100;
 	}
-	void move(int px, int py)
+    void move(int px, int py) //handle the enemy movement with a variable and update every step
 	{
 		if(dbSpriteX(25) < px)
 		{

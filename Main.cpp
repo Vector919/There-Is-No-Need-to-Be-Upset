@@ -16,7 +16,7 @@ void DarkGDK ( void )
 	dbRandomize(dbTimer());
 	hndMusic();
 	fillWorld();
-	
+    //Create our objects (defined in game.h/player.h)
 	gorillaMunch gmn("sprites/trev2.png");
 	Enemy lg1("sprites/rustle.png");
 	prize trevor("sprites/munch.png");
